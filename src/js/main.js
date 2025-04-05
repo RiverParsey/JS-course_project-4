@@ -7,4 +7,7 @@ import $ from './lib/lib';
 
 // console.log($('.some').closest('.findme'));
 
-console.log($('.more').eq(0).siblings());
+// console.log($('.more').eq(0).siblings());
+
+// $('button').fadeOut(1800);
+$('button').fadeIn(1800);
