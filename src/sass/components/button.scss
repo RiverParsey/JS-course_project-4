@@ -1,0 +1,99 @@
+@use '../general/variables.scss' as v;
+@use 'sass:color';
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid v.$primary;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  color: v.$dark;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: all 0.2;
+  &:hover {
+    background-color: color.scale(v.$primary, $lightness: 10%);
+    color: #fff;
+  }
+  &-primary {
+    background-color: v.$primary;
+    border-color: v.$primary;
+    color: #fff;
+    &:hover {
+      background-color: color.adjust(v.$primary, $lightness: -10%);
+    }
+  }
+  &-success {
+    background-color: v.$success;
+    border-color: v.$success;
+    color: #fff;
+    &:hover {
+      background-color: color.adjust(v.$success, $lightness: -10%);
+    }
+  }
+  &-danger {
+    background-color: v.$danger;
+    border-color: v.$danger;
+    color: #fff;
+    &:hover {
+      background-color: color.adjust(v.$danger, $lightness: -10%);
+    }
+  }
+  &-warning {
+    background-color: v.$warning;
+    border-color: v.$warning;
+    color: #fff;
+    &:hover {
+      background-color: color.adjust(v.$warning, $lightness: -10%);
+    }
+  }
+  &-dark {
+    background-color: v.$dark;
+    border-color: v.$dark;
+    color: #fff;
+    &:hover {
+      background-color: color.adjust(v.$dark, $lightness: -10%);
+    }
+  }
+  &-outline-primary {
+    border-color: v.$primary;
+    color: v.$primary;
+    &:hover {
+      background-color: v.$primary;
+    }
+  }
+  &-outline-success {
+    border-color: v.$success;
+    color: v.$success;
+    &:hover {
+      background-color: v.$success;
+    }
+  }
+  &-outline-danger {
+    border-color: v.$danger;
+    color: v.$danger;
+    &:hover {
+      background-color: v.$danger;
+    }
+  }
+  &-outline-warning {
+    border-color: v.$warning;
+    color: v.$warning;
+    &:hover {
+      background-color: v.$warning;
+    }
+  }
+  &-outline-dark {
+    border-color: v.$dark;
+    color: v.$dark;
+    &:hover {
+      background-color: v.$dark;
+    }
+  }
+  &-block {
+    display: block;
+    width: 100%;
+  }
+}

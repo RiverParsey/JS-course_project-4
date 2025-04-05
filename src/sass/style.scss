@@ -1,17 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@use './general/base.scss';
+@use './general/variables.scss';
+@use './general/typography.scss';
+@use './components/ui.scss';
+@use './helpers/classes.scss';
 
-button {
-    width: 150px;
-    height: 40px;
-    background-color: lightblue;
-    text-align: center;
-}
 
-.active {
-    font-size: 20px;
-    color: red;
-}
+// * {
+//     color: variables.$danger;
+// }

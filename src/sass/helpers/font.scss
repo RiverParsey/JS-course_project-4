@@ -1,0 +1,35 @@
+@use '../general/variables.scss' as v;
+
+.fz-16 {
+  font-size: 16px;
+}
+.fz-20 {
+  font-size: 20px;
+}
+.fz-24 {
+  font-size: 24px;
+}
+.bold {
+  font-weight: bold;
+}
+.thin {
+  font-weight: 300;
+}
+.italic {
+  font-style: italic;
+}
+.text-color-primary {
+  color: v.$primary;
+}
+.text-color-danger {
+  color: v.$danger;
+}
+.text-color-success {
+  color: v.$success;
+}
+.text-color-warning {
+  color: v.$warning;
+}
+.text-color-dark {
+  color: v.$dark;
+}
