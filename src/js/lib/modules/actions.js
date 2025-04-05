@@ -33,7 +33,7 @@ $.prototype.index = function() {
     return item == this[0];
   };
 
-  return childs.findIndex();
+  return childs.findIndex(findMyIndex);
 };
 
 $.prototype.find = function(selector) {
