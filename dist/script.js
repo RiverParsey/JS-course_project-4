@@ -734,45 +734,6 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_lib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/lib */ "./src/js/lib/lib.js");
 
-(0,_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('#first').on('click', () => {
-  (0,_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('div').eq(1).fadeToggle(800);
-});
-(0,_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('[data-count="second"]').on('click', () => {
-  (0,_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('div').eq(2).fadeToggle(800);
-});
-(0,_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('button').eq(2).on('click', () => {
-  (0,_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('.w-500').fadeToggle(800);
-});
-(0,_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('#trigger').click(() => (0,_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('#trigger').createModal({
-  text: {
-    title: 'Modal title',
-    body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, ex. Reprehenderit aliquid nostrum impedit rem illo nam unde, minima, assumenda esse dignissimos quae omnis? Commodi enim harum eaque minima autem?'
-  },
-  btns: {
-    count: 3,
-    settings: [['Close', ['btn-danger', 'mr-10'], true], ['Save changes', ['btn-success'], false, () => {
-      alert('data saved');
-    }], ['Another button', ['btn-warning', 'ml-10'], false, () => {
-      alert('hello world');
-    }]]
-  }
-}));
-(0,_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])().get('https://jsonplaceholder.typicode.com/todos/1').then(res => console.log(res));
-
-// $('.wrap').html(
-//   `
-//   <div class="dropdown">
-//     <button class="btn btn-primary dropdown-toggle" id="dropdownMenuButton">Dropdown button</button>
-//     <div class="dropdown-menu" data-toggle-id="dropdownMenuButton">
-//         <a href="#" class="dropdown-item">Action</a>
-//         <a href="#" class="dropdown-item">Action #2</a>
-//         <a href="#" class="dropdown-item">Action #3</a>
-//     </div>
-//   </div>
-//   `
-// );
-
-// $('.dropdown-toggle').dropdown();
 })();
 
 /******/ })()
